@@ -1,0 +1,55 @@
+.modalContent {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+}
+
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.789);
+  z-index: 999;
+}
+
+.imageContainer {
+  position: relative;
+}
+
+.modalImage {
+  max-width: 90vw;
+  max-height: 90vh;
+  object-fit: contain;
+  margin: 0 auto;
+}
+
+.imageDescription {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.closeButton {
+  position: absolute;
+  top: 40px;
+  right: 60px;
+  background-color: lightcyan;
+  padding: 10px 20px;
+  font-size: 16px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.closeButton:hover {
+  background-color: darkgray;
+}
