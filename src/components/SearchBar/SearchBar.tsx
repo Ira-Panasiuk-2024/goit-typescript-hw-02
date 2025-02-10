@@ -1,6 +1,6 @@
 import toast, { Toaster } from 'react-hot-toast';
 import { FiSearch } from 'react-icons/fi';
-import сss from './SearchBar.module.css';
+import css from './SearchBar.module.css';
 import { useState } from 'react';
 import { SearchBarProps, SearchBarState } from './SearchBar.types';
 
@@ -26,10 +26,10 @@ const SearchBar = ({ onSubmit, children }: SearchBarProps) => {
   };
 
   return (
-    <header className={сss.page}>
-      <form className={сss.searchForm} onSubmit={handleSubmit}>
+    <header className={css.page}>
+      <form className={css.searchForm} onSubmit={handleSubmit}>
         <input
-          className={сss.searchInput}
+          className={css.searchInput}
           type="text"
           name="search"
           placeholder="Search images and photos"
@@ -38,8 +38,8 @@ const SearchBar = ({ onSubmit, children }: SearchBarProps) => {
           autoComplete="off"
         />
 
-        <button className={сss.searchBtn} type="submit">
-          <FiSearch className={сss.searchIcon} />
+        <button className={css.searchBtn} type="submit">
+          <FiSearch className={css.searchIcon} />
         </button>
       </form>
 

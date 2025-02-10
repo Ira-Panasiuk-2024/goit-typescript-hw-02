@@ -1,6 +1,5 @@
 import css from './ImageCard.module.css';
 import ImageCardProps from './ImageCard.types';
-// import { Image } from '../App/App.types';
 
 const ImageCard = ({ image, onClick, children }: ImageCardProps) => {
   return (
